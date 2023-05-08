@@ -122,7 +122,7 @@ Retrieve basic information about the operating system.
 Packages
 ^^^^^^^^
 
-The current packages inventory of each Wazuh agent. On Linux systems, retrieved packages can be `deb`, `pacman` or `rpm` types.
+The current packages inventory of each Wazuh agent. On Linux systems, retrieved packages can be `deb`, `pacman`, `rpm` or `snap` types.
 
 +------------------+----------------------------------------+---------------------------------------------------+--------------------+
 | Field            | Description                            | Example                                           | Available          |
@@ -139,11 +139,11 @@ The current packages inventory of each Wazuh agent. On Linux systems, retrieved 
 +------------------+----------------------------------------+---------------------------------------------------+--------------------+
 | **section**      | Section of the package                 | kernel                                            | deb/rpm/pkg        |
 +------------------+----------------------------------------+---------------------------------------------------+--------------------+
-| **size**         | Size of the installed package in bytes | 14                                                | deb/rpm/pacman     |
+| **size**         | Size of the installed package in bytes | 14                                                | deb/rpm/pacman/snap|
 +------------------+----------------------------------------+---------------------------------------------------+--------------------+
 | **vendor**       | Vendor name                            | Ubuntu Kernel Team                                | All                |
 +------------------+----------------------------------------+---------------------------------------------------+--------------------+
-| **install_time** | Date when the package was installed    | 2018/02/08 18:45:48                               | rpm/pacman/win     |
+| **install_time** | Date when the package was installed    | 2018/02/08 18:45:48                               | rpm/pacman/win/snap|
 +------------------+----------------------------------------+---------------------------------------------------+--------------------+
 | **version**      | Version of the package                 | 4.4.0.130.136                                     | All                |
 +------------------+----------------------------------------+---------------------------------------------------+--------------------+
